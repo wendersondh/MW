@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: linear-gradient(139deg, rgb(25, 17, 122) 6%, rgba(74,24,112,1) 94%);
+    
+}
+
+.container {
+    text-align: center;
+    padding: 30px; 
+    border-radius: 10px;
+    margin: 20px; 
+    max-width: 80%; 
+    border: 1px solid white;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 15px cyan;
+    max-width: 400px;
+    
+}
+
+.photo-frame {
+    margin-bottom: 20px;
+}
+
+.photo-frame img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.counter {
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 18px;
+    color: #fff;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.message p{
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+h3, p {
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    .photo-frame img {
+        width: 100%;
+        height: auto;
+    }
+
+    .message {
+        font-size: 16px;
+    }
+}
+
+
+.photo-frame img {
+    transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes changeBackground {
+    0% { background: rgb(25, 17, 122); }
+    50% { background: rgba(74,24,112,1); }
+    100% { background: rgb(25, 17, 122); }
+}
+
+body {
+    animation: changeBackground 20s infinite alternate;
+}
+
+.music-controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #a020f0;
+}
+
+input[type="range"] {
+    width: 200px;
+    margin-top: 10px;
+}
+

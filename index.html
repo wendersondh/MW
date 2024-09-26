@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Você</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="photo-frame">
+            <img id="photo" src="./img/foto1.png" alt="Foto do relacionamento">
+        </div>
+        <div class="counter">
+            <h3>Juntos</h3>
+            <p id="time-counter"></p>
+        </div>
+        <p>_____________________</p>
+        <div class="message">
+            <p>Para você se lembrar de quantos dias se passaram 
+                da minha melhor decisão. E que a gente possa
+                 voltar aqui e ver que os dias só aumentam, Eu te 
+                 amo eternamente senhorita mireli <span>😍💝</span>
+            </p>
+        </div>
+        <audio id="background-music" loop>
+            <source src="./audio/it will rain.mpeg" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        
+        <div class="music-controls">
+            <button id="play-music">Tocar Música 🎶</button>
+            <button id="pause-music">Pausar Música ⏸️</button>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
